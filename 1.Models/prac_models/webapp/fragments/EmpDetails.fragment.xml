@@ -1,0 +1,40 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:simpleForm="sap.ui.layout.form">
+
+    <Dialog title="Update Employee">
+
+        <content>
+            <simpleForm:SimpleForm editable="true">
+                <simpleForm:content>
+
+                    <Label text="Employee Number" />
+                    <Input value="{empJSON>/EmployeeDetails/EmployeeNumber}" editable="false"/>
+
+                    <Label text="Employee Name" />
+                    <Input value="{empJSON>/EmployeeDetails/EmployeeName}" />
+
+                    <Label text="Company Name" />
+                    <Input value="{empJSON>/EmployeeDetails/CompanyName}" />
+
+                    <Label text="Email ID" />
+                    <Input value="{empJSON>/EmployeeDetails/EmailID}" />
+
+                    <Label text="Address" />
+                    <Input value="{empJSON>/EmployeeDetails/Address}" />
+
+                </simpleForm:content>
+            </simpleForm:SimpleForm>
+        </content>
+
+        <beginButton>
+            <Button text="Save" press="onSaveDialog" />
+        </beginButton>
+
+        <endButton>
+            <Button text="Cancel" press="onCloseDialog" />
+        </endButton>
+
+    </Dialog>
+</core:FragmentDefinition>

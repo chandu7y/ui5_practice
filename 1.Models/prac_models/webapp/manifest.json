@@ -51,6 +51,13 @@
         "settings": {
           "bundleName": "msg.ri.pracmodels.i18n.i18n"
         }
+      },
+      "empJSON": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/empData.json",
+        "settings": {
+                "defaultBindingMode": "OneWay"
+            }
       }
     },
     "resources": {
@@ -83,8 +90,8 @@
       ],
       "targets": {
         "TargetApp": {
-          "id": "App",
-          "name": "App"
+          "id": "Home",
+          "name": "Home"
         }
       }
     },

@@ -1,0 +1,34 @@
+<mvc:View controllerName="msg.ri.pracmodels.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:simpleForm="sap.ui.layout.form"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Page>
+        <content>
+            <simpleForm:SimpleForm>
+                <core:Title text="Employee Details Form"/>
+                <simpleForm:content>
+                    <Label text="Employee Number" />
+                    <Input id="empNo" editable="false" value="{empJSON>/EmployeeDetails/EmployeeNumber}"/>
+
+                    <Label text="Employee Name" />
+                    <Input id="empName" editable="false" value="{empJSON>/EmployeeDetails/EmployeeName}"/>
+
+                    <Label text="Company Name" />
+                    <Input id="compName" editable="false" value="{empJSON>/EmployeeDetails/CompanyName}"/>
+
+                    <Label text="Email ID" />
+                    <Input id="emailId" editable="false" value="{empJSON>/EmployeeDetails/EmailID}"/>
+
+                    <Label text="Address" />
+                    <Input id="address" editable="false" value="{empJSON>/EmployeeDetails/Address}"/>
+
+                    <Label text="" />
+                    <HBox justifyContent="Start">
+                        <Button text="Update" type="Emphasized" press="onUpdate"/>
+                    </HBox>
+                </simpleForm:content>
+            </simpleForm:SimpleForm>
+        </content>
+    </Page>
+</mvc:View>
